@@ -49,37 +49,34 @@ class _HomeState extends State<Home> {
     return Scaffold(
       extendBody: true,
       body: screen[_selectedTab.index],
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
-        child: DotNavigationBar(
-          margin: const EdgeInsets.only(left: 5, right: 5),
-          currentIndex: _SelectedTab.values.indexOf(_selectedTab),
-          dotIndicatorColor: const Color(0xFF333A47),
-          backgroundColor: Colors.teal[200],
-          unselectedItemColor: Colors.grey[300],
-          splashBorderRadius: 50,
-          // enableFloatingNavBar: false,
-          onTap: _handleIndexChanged,
-          items: [
-            /// Home
-            DotNavigationBarItem(
-              icon: Icon(Icons.home),
-              selectedColor: const Color(0xFF333A47),
-            ),
+      bottomNavigationBar: DotNavigationBar(
+        margin: const EdgeInsets.only(left: 5, right: 5),
+        currentIndex: _SelectedTab.values.indexOf(_selectedTab),
+        dotIndicatorColor: const Color(0xFF333A47),
+        backgroundColor: Colors.teal[200],
+        unselectedItemColor: Colors.grey[300],
+        splashBorderRadius: 50,
+        // enableFloatingNavBar: false,
+        onTap: _handleIndexChanged,
+        items: [
+          /// Home
+          DotNavigationBarItem(
+            icon: Icon(Icons.home),
+            selectedColor: const Color(0xFF333A47),
+          ),
 
-            /// Likes
-            DotNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              selectedColor: const Color(0xFF333A47),
-            ),
+          /// Likes
+          DotNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            selectedColor: const Color(0xFF333A47),
+          ),
 
-            /// Search
-            DotNavigationBarItem(
-              icon: Icon(Icons.search),
-              selectedColor: const Color(0xFF333A47),
-            ),
-          ],
-        ),
+          /// Search
+          DotNavigationBarItem(
+            icon: Icon(Icons.search),
+            selectedColor: const Color(0xFF333A47),
+          ),
+        ],
       ),
     );
   }
