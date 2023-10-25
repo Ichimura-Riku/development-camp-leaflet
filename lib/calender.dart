@@ -57,7 +57,7 @@ class _CalenderState extends State<Calender> {
                 selectableDayPredicate: (date) => date.day != 23,
                 locale: 'ja',
               ),
-              Expanded(child: Timeline(date: _selectedDate)),
+              Expanded(child: Timelinelist(date: _selectedDate)),
             ],
           ),
         ]));

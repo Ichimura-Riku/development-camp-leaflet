@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:timelines/timelines.dart';
 
-class Timeline extends StatefulWidget {
+class Timelinelist extends StatefulWidget {
   final DateTime date;
-  const Timeline({Key? key, required this.date}) : super(key: key);
+  const Timelinelist({Key? key, required this.date}) : super(key: key);
 
   @override
-  State<Timeline> createState() => _TimelineState();
+  State<Timelinelist> createState() => _TimelinelistState();
 }
 
-class _TimelineState extends State<Timeline> {
+class _TimelinelistState extends State<Timelinelist> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +28,17 @@ class Day1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("timeline1");
+    return Timeline.tileBuilder(
+    builder: TimelineTileBuilder.fromStyle(
+      contentsAlign: ContentsAlign.alternating,
+      contentsBuilder: (context, index) => Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Text('Timeline Event $index'),
+      ),
+      itemCount: 10,
+    ),
+  );
+;
   }
 }
 
