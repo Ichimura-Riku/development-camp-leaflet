@@ -63,18 +63,21 @@ class _HomeState extends State<Home> {
           DotNavigationBarItem(
             icon: Icon(Icons.home),
             selectedColor: const Color(0xFF333A47),
+            unselectedColor: Colors.white70
           ),
 
           /// Likes
           DotNavigationBarItem(
             icon: Icon(Icons.favorite),
             selectedColor: const Color(0xFF333A47),
+            unselectedColor: Colors.white70
           ),
 
           /// Search
           DotNavigationBarItem(
             icon: Icon(Icons.search),
             selectedColor: const Color(0xFF333A47),
+            unselectedColor: Colors.white70
           ),
         ],
       ),
