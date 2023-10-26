@@ -1,5 +1,6 @@
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kitcamp2023/calender.dart';
 import 'package:kitcamp2023/role.dart';
 import 'package:kitcamp2023/talk_box.dart';
@@ -14,6 +15,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarColor: Colors.transparent,
+      ),
+    );
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.edgeToEdge,
+    );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -61,24 +71,21 @@ class _HomeState extends State<Home> {
         items: [
           /// Home
           DotNavigationBarItem(
-            icon: Icon(Icons.home),
-            selectedColor: const Color(0xFF333A47),
-            unselectedColor: Colors.white70
-          ),
+              icon: Icon(Icons.home),
+              selectedColor: const Color(0xFF333A47),
+              unselectedColor: Colors.white70),
 
           /// Likes
           DotNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            selectedColor: const Color(0xFF333A47),
-            unselectedColor: Colors.white70
-          ),
+              icon: Icon(Icons.favorite),
+              selectedColor: const Color(0xFF333A47),
+              unselectedColor: Colors.white70),
 
           /// Search
           DotNavigationBarItem(
-            icon: Icon(Icons.search),
-            selectedColor: const Color(0xFF333A47),
-            unselectedColor: Colors.white70
-          ),
+              icon: Icon(Icons.search),
+              selectedColor: const Color(0xFF333A47),
+              unselectedColor: Colors.white70),
         ],
       ),
     );
