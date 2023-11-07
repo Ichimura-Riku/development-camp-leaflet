@@ -8,8 +8,8 @@ class Day2Timeline extends StatelessWidget {
     return Column(children: [
       for (int i = 0; i < Day2.time.length; i++) ...{
         TimelineTile(
-            indicatorStyle: const IndicatorStyle(width: 10, color: Colors.blue),
-            beforeLineStyle: const LineStyle(color: Colors.blue),
+            indicatorStyle: const IndicatorStyle(width: 10, color: Colors.greenAccent),
+            beforeLineStyle: const LineStyle(color: Colors.greenAccent),
             alignment: TimelineAlign.manual,
             lineXY: 0.2,
             startChild: Container(
