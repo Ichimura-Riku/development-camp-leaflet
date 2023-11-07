@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kitcamp2023/timeline/calender.dart';
-import 'package:kitcamp2023/role.dart';
+import 'package:kitcamp2023/role/role.dart';
 import 'package:kitcamp2023/talk_box.dart';
 
 void main() async {

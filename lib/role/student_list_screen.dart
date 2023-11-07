@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:kitcamp2023/imitation_list_tile.dart';
-import 'package:kitcamp2023/student.dart';
+import 'package:kitcamp2023/role/imitation_list_tile.dart';
+import 'package:kitcamp2023/role/student.dart';
 
 class StudentFilterScreen extends StatefulWidget {
   const StudentFilterScreen({super.key});
