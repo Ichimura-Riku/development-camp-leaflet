@@ -4,7 +4,7 @@ import 'package:kitcamp2023/timeline/calender.dart';
 import 'package:kitcamp2023/role.dart';
 import 'package:kitcamp2023/talk_box.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitcamp2023/student_list_screen.dart';
 
 class Role extends StatelessWidget {
   const Role({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class Role extends StatelessWidget {
               .copyWith(color: Colors.white70),
         ),
       ),
+      body: const StudentFilterScreen(),
     );
   }
 }
