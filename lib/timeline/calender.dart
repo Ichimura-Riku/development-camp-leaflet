@@ -1,6 +1,6 @@
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
-import 'package:kitcamp2023/timeline.dart';
+import 'package:kitcamp2023/timeline/timeline.dart';
 
 class Calender extends StatefulWidget {
   const Calender({Key? key}) : super(key: key);

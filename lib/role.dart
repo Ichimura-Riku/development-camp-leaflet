@@ -6,7 +6,18 @@ class Role extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("role"),
+      backgroundColor: const Color(0xFF333A47),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF333A47),
+        elevation: 0,
+        title: Text(
+          'KITCAMP2023 Role',
+          style: Theme.of(context)
+              .textTheme
+              .titleLarge!
+              .copyWith(color: Colors.white70),
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kitcamp2023/day1_timeline.dart';
-import 'package:kitcamp2023/day2_timeline.dart';
+import 'package:kitcamp2023/timeline/day1_timeline.dart';
+import 'package:kitcamp2023/timeline/day2_timeline.dart';
 
 class Timelinelist extends StatefulWidget {
   final DateTime date;

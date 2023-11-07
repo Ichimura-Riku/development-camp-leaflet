@@ -6,7 +6,18 @@ class TalkBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("talk box"),
+      backgroundColor: const Color(0xFF333A47),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF333A47),
+        elevation: 0,
+        title: Text(
+          'KITCAMP2023 TalkBox',
+          style: Theme.of(context)
+              .textTheme
+              .titleLarge!
+              .copyWith(color: Colors.white70),
+        ),
+      ),
     );
   }
 }
