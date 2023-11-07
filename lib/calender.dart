@@ -34,7 +34,7 @@ class _CalenderState extends State<Calender> {
             style: Theme.of(context)
                 .textTheme
                 .titleLarge!
-                .copyWith(color: Colors.tealAccent[100]),
+                .copyWith(color: Colors.white70),
           ),
         ),
         body: Stack(children: [
@@ -49,10 +49,10 @@ class _CalenderState extends State<Calender> {
                 onDateSelected: (date) => setState(() => _selectedDate = date),
                 leftMargin: 15,
                 monthColor: Colors.white70,
-                dayColor: Colors.teal[200],
+                dayColor: Colors.white70,
                 dayNameColor: const Color(0xFF333A47),
-                activeDayColor: Colors.white70,
-                activeBackgroundDayColor: Colors.redAccent[100],
+                activeDayColor: const Color(0xFF333A47),
+                activeBackgroundDayColor: Colors.white70,
                 dotsColor: const Color(0xFF333A47),
                 selectableDayPredicate: (date) => date.day != 23,
                 locale: 'ja',

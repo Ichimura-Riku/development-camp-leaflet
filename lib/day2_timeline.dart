@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-class Day1Timeline extends StatelessWidget {
-  const Day1Timeline({super.key});
+class Day2Timeline extends StatelessWidget {
+  const Day2Timeline({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      for (int i = 0; i < Day1.time.length; i++) ...{
+      for (int i = 0; i < Day2.time.length; i++) ...{
         TimelineTile(
             indicatorStyle: const IndicatorStyle(width: 10, color: Colors.blue),
             beforeLineStyle: const LineStyle(color: Colors.blue),
@@ -16,7 +16,7 @@ class Day1Timeline extends StatelessWidget {
               alignment: Alignment.center,
               height: 35,
               child: Text(
-                Day1.time[i],
+                Day2.time[i],
                 style: const TextStyle(color: Colors.white70),
               ),
             ),
@@ -25,7 +25,7 @@ class Day1Timeline extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15),
               height: 35,
               child: Text(
-                Day1.event[i],
+                Day2.event[i],
                 style: const TextStyle(color: Colors.white70),
               ),
             ))
@@ -34,33 +34,23 @@ class Day1Timeline extends StatelessWidget {
   }
 }
 
-class Day1 {
+class Day2 {
   static List<String> time = [
-    '9:00',
+    '7:00',
+    '8:00',
+    '9:20',
+    '9:50',
     '10:00',
-    '10:20',
-    '11:00',
-    '12:00',
-    '13:00',
-    '14:00',
-    '15:30',
-    '16:00',
+    '11:30',
     '18:00',
-    '19:00',
-    '22:00'
   ];
   static List<String> event = [
-    'レンタカーのレンタル手続き',
-    'オープニング・活動説明',
-    'LT発表',
-    '買物班行動開始, 開発・交流',
-    'お昼休憩',
-    '移動準備・集合',
-    '移動',
-    'チェックイン',
-    '夕食班準備開始, 開発・交流',
-    '夕食',
+    '起床・朝の支度・朝食',
     '開発・交流',
-    '就寝'
+    '片付け・クロージング',
+    'チェックアウト',
+    '移動',
+    '解散',
+    'レンタカー返却',
   ];
 }

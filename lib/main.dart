@@ -1,4 +1,3 @@
-import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kitcamp2023/calender.dart';
@@ -45,52 +44,57 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  var _selectedTab = _SelectedTab.home;
-
-  void _handleIndexChanged(int i) {
-    setState(() {
-      _selectedTab = _SelectedTab.values[i];
-    });
-  }
-
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     var screen = [const Calender(), const Role(), const TalkBox()];
     return Scaffold(
       extendBody: true,
-      body: screen[_selectedTab.index],
-      bottomNavigationBar: DotNavigationBar(
-        margin: const EdgeInsets.only(left: 5, right: 5),
-        currentIndex: _SelectedTab.values.indexOf(_selectedTab),
-        dotIndicatorColor: const Color(0xFF333A47),
-        backgroundColor: Colors.teal[200],
-        unselectedItemColor: Colors.grey[300],
-        splashBorderRadius: 50,
-        // enableFloatingNavBar: false,
-        onTap: _handleIndexChanged,
-        items: [
-          /// Home
-          DotNavigationBarItem(
-              icon: Icon(Icons.home),
-              selectedColor: const Color(0xFF333A47),
-              unselectedColor: Colors.white70),
-
-          /// Likes
-          DotNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              selectedColor: const Color(0xFF333A47),
-              unselectedColor: Colors.white70),
-
-          /// Search
-          DotNavigationBarItem(
-              icon: Icon(Icons.search),
-              selectedColor: const Color(0xFF333A47),
-              unselectedColor: Colors.white70),
+      body: screen[_currentIndex],
+      bottomNavigationBar: NavigationBar(
+        backgroundColor: const Color(0xFF333A47),
+        indicatorColor: Colors.white70,
+        selectedIndex: _currentIndex,
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
+        onDestinationSelected: (index) => setState(() {
+          _currentIndex = index;
+        }),
+        destinations: const [
+          NavigationDestination(
+            selectedIcon: Icon(
+              Icons.home,
+              color: Color(0xFF333A47),
+            ),
+            icon: Icon(
+              Icons.home_outlined,
+              color: Colors.white70,
+            ),
+            label: 'First',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(
+              Icons.account_box,
+              color: Color(0xFF333A47),
+            ),
+            icon: Icon(
+              Icons.account_box_outlined,
+              color: Colors.white70,
+            ),
+            label: 'Second',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(
+              Icons.inventory_2,
+              color: Color(0xFF333A47),
+            ),
+            icon: Icon(
+              Icons.inventory_2_outlined,
+              color: Colors.white70,
+            ),
+            label: 'Third',
+          ),
         ],
       ),
     );
   }
 }
-
-// ignore: constant_identifier_names
-enum _SelectedTab { home, favorite, search }
