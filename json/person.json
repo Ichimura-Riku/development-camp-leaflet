@@ -1,0 +1,192 @@
+[
+  {
+    "id": "1",
+    "name": "八巻顕伍",
+    "department": "情報工学",
+    "class": "1EP2",
+    "project": [
+      "BusStop"
+    ],
+    "role": []
+  },
+  {
+    "id": "2",
+    "name": "大石幸長",
+    "department": "メディア情報",
+    "class": "2FM2",
+    "project": [
+      "CirKit"
+    ],
+    "role": [
+      "しおり",
+      "LT",
+      "調理"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "長谷川優也",
+    "department": "情報工学",
+    "class": "2EP1",
+    "project": [
+      "BusStop"
+    ],
+    "role": [
+      "買い出し"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "日竎幹貴",
+    "department": "情報工学",
+    "class": "2EP1",
+    "project": [
+      "BusStop"
+    ],
+    "role": [
+      "買い出し"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "籾井野乃加",
+    "department": "情報工学",
+    "class": "2EP1",
+    "project": [
+      "スマプロ"
+    ],
+    "role": [
+      "LT",
+      "調理"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "井上里音",
+    "department": "情報工学",
+    "class": "2EP2",
+    "project": [
+      "セキプロ",
+      "CirKit"
+    ],
+    "role": [
+      "LT",
+      "調理"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "松村拓洋",
+    "department": "情報工学",
+    "class": "2EP2",
+    "project": [
+      "スマプロ"
+    ],
+    "role": [
+      "買い出し",
+      "LT"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "山本航輝",
+    "department": "情報工学",
+    "class": "2EP2",
+    "project": [
+      "CirKit"
+    ],
+    "role": [
+      "買い出し",
+      "調理"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "杉森晃大",
+    "department": "情報工学",
+    "class": "2EP3",
+    "project": [
+      "セキプロ"
+    ],
+    "role": [
+      "LT",
+      "運転"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "李健",
+    "department": "情報工学",
+    "class": "3EP3",
+    "project": [
+      "CirKit",
+      "BusStop"
+    ],
+    "role": [
+      "LT",
+      "調理"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "市村凌久",
+    "department": "情報工学",
+    "class": "3EP3",
+    "project": [
+      "BusStop"
+    ],
+    "role": [
+      "LT"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "頃安隆耀",
+    "department": "情報工学",
+    "class": "3EP3",
+    "project": [
+      "CirKit",
+      "IoA"
+    ],
+    "role": [
+      "LT",
+      "調理"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "勝木隆也",
+    "department": "情報工学",
+    "class": "3EP4",
+    "project": [
+      "BusStop"
+    ],
+    "role": []
+  },
+  {
+    "id": "14",
+    "name": "増田尚之",
+    "department": "情報工学",
+    "class": "4EP4",
+    "project": [
+      "BusStop"
+    ],
+    "role": [
+      "買い出し",
+      "運転"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "坂内遼太郎",
+    "department": "情報工学",
+    "class": "1D1",
+    "project": [
+      "BusStop"
+    ],
+    "role": [
+      "買い出し",
+      "運転"
+    ]
+  }
+]
