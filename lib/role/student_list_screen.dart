@@ -96,6 +96,7 @@ class _StudentFilterScreenState extends State<StudentFilterScreen> {
                 ),
                 title: Text(getFilteredStudents()[index].name,
                     style: const TextStyle(color: Colors.white70)),
+                trailing: getFilteredStudents()[index].projects,
               );
             },
           ),
