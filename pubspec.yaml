@@ -39,6 +39,7 @@ dependencies:
   flutter_hooks: ^0.20.3
   hooks_riverpod: ^2.4.4
   timeline_tile: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,12 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_foreground: "assets/icon/icon_adaptive.png"
+  adaptive_icon_background: "#323a47"
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
