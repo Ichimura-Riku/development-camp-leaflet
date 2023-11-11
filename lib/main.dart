@@ -30,6 +30,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      // builder: (BuildContext context, Widget? child) {
+      //   return Overlay(
+      //     initialEntries: [
+      //       OverlayEntry(
+      //         builder: (BuildContext context) => ErrorWidget(),
+      //       ),
+      //     ],
+      //   );
+      // },
       home: const Home(),
     );
   }
@@ -98,3 +107,11 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
+// class ErrorWidget extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     // エラーメッセージを非表示にするためのウィジェット
+//     return SizedBox.shrink();
+//   }
+// }

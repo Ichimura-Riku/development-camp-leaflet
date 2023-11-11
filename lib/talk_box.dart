@@ -15,7 +15,14 @@ class _TalkBoxState extends State<TalkBox> {
       "最近ハマってること",
       "プロジェクトに入った経緯",
       "コテージ行ったらやりたいこと",
-      "今考えているキャリア"
+      "今考えているキャリア",
+      "夏休みの思い出",
+      "右隣の人の印象",
+      "技術に対するモチベーションはどこから？",
+      "100万円もらえるとしたら何につかう？",
+      "ぶっちゃけトーク",
+      "大学に来て一番のやらかしエピソード",
+      "昨日何してた？",
     ];
     showDialog(
       context: context,
@@ -24,7 +31,7 @@ class _TalkBoxState extends State<TalkBox> {
           borderRadius: BorderRadius.circular(10),
         ),
         title: const Text("お題"),
-        content: Text(contents[random.nextInt(3)]),
+        content: Text(contents[random.nextInt(11)]),
         actions: [
           TextButton(
             onPressed: () {
